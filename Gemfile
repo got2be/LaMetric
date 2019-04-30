@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 # gemspec
 
+gem 'json'
+gem 'faraday'
+
 group :test do
   gem 'rspec'
   gem 'ffaker'
