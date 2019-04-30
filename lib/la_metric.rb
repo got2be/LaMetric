@@ -1,4 +1,5 @@
 require 'faraday'
+require_relative 'la_metric/frames'
 require_relative 'la_metric/configuration'
 
 module LaMetric
