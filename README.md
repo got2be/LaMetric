@@ -47,7 +47,7 @@ Push frames to widget:
 
 Or render frames in your controller
 
-    render json: frames.serialize
+    render json: frames.to_json
 
 
 Contribution

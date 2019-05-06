@@ -34,7 +34,7 @@ RSpec.describe LaMetric do
       end
 
       before do
-        stub_request(:post, url).with(body: frames.serialize).to_return(status: 200)
+        stub_request(:post, url).with(body: frames.to_json).to_return(status: 200)
       end
 
       context 'configuration is set via environment variables' do
@@ -51,7 +51,7 @@ RSpec.describe LaMetric do
 
         it 'pushes serialized frames to LaMetric server' do
           subject
-          expect(WebMock).to have_requested(:post, url).with(body: frames.serialize, headers: request_headers).once
+          expect(WebMock).to have_requested(:post, url).with(body: frames.to_json, headers: request_headers).once
         end
       end
 
@@ -66,7 +66,7 @@ RSpec.describe LaMetric do
 
         it 'pushes serialized frames to LaMetric server' do
           subject
-          expect(WebMock).to have_requested(:post, url).with(body: frames.serialize, headers: request_headers).once
+          expect(WebMock).to have_requested(:post, url).with(body: frames.to_json, headers: request_headers).once
         end
       end
     end

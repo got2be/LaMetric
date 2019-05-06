@@ -34,8 +34,8 @@ RSpec.describe LaMetric::Frames do
     end
   end
 
-  describe '.serialize' do
-    subject { instance.serialize }
+  describe '.to_json' do
+    subject { instance.to_json }
 
     let(:instance) { described_class.new }
 

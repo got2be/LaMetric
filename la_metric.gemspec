@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'la_metric'
-  gem.version     = '0.0.1'
+  gem.version     = '0.0.2'
   gem.date        = '2019-04-30'
   gem.summary     = 'LaMetric'
   gem.description = 'A gem for LaMetric smart clock'

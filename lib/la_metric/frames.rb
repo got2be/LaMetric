@@ -13,7 +13,7 @@ module LaMetric
       @frames << LaMetric::Frame.new(normalize(frame_data))
     end
 
-    def serialize
+    def to_json
       { frames: frames }.to_json
     end
 

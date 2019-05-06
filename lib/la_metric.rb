@@ -19,7 +19,7 @@ module LaMetric
       req.headers['Accept'] = 'application/json'
       req.headers['Cache-Control'] = 'no-cache'
       req.headers['X-Access-Token'] = configuration.access_token
-      req.body = frames.serialize
+      req.body = frames.to_json
     end
   end
 end
